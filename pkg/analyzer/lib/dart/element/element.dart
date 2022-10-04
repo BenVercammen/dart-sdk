@@ -1855,6 +1855,12 @@ abstract class MethodElement implements ClassMemberElement, ExecutableElement {
 
   @override
   MethodElement get declaration;
+
+  /// The offset of the first character of the declaration code in the file.
+  int? get codeOffset;
+
+  /// The length of the declaration code in the file.
+  int? get codeLength;
 }
 
 /// A class augmentation, defined by a mixin augmentation declaration.

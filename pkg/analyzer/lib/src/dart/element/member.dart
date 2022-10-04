@@ -792,6 +792,12 @@ class MethodMember extends ExecutableMember implements MethodElement {
   }
 
   @override
+  int? get codeLength => declaration.codeLength;
+
+  @override
+  int? get codeOffset => declaration.codeOffset;
+
+  @override
   MethodElement get declaration => super.declaration as MethodElement;
 
   @override
